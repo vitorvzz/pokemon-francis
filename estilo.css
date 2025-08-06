@@ -1,0 +1,116 @@
+/* Reset básico e tipografia */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Parallax base */
+.parallax1, .parallax2, .parallax3 {
+  position: relative;
+  height: 100vh; /* ocupa toda altura da viewport */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Imagens de fundo */
+.parallax1 {
+  background-image: url("../imgs/varios pokemons.jpg");
+}
+.parallax2 {
+  background-image: url("../imgs/pokemon img fundo.webp");
+}
+.parallax3 {
+  background-image: url("../imgs/4 pokemon.jfif");
+}
+
+/* Caixa do texto central */
+.caption {
+  background: rgba(0, 0, 0, 0.5); /* leve transparência escura */
+  padding: 40px 60px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  max-width: 90%;
+  text-align: center;
+}
+
+.caption span.border {
+  background-color: transparent;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border: 3px solid #fff;
+  padding: 15px 40px;
+  border-radius: 30px;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.caption span.border:hover {
+  background-color: #fff;
+  color: #d32f2f;
+  cursor: pointer;
+}
+
+/* Boxes de texto */
+.box1, .box2 {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.box1 {
+  background-color: #fff;
+  color: #333;
+  text-align: justify;
+  font-size: 1.1rem;
+}
+
+.box1 h3 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: #d32f2f;
+}
+
+.box2 {
+  background-color: #d32f2f;
+  color: #fff;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+.box2 h3 {
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+/* Pequeno ajuste no parágrafo para espaçamento */
+.box2 p {
+  margin-bottom: 20px;
+}
+
+/* Responsividade */
+@media(max-width: 768px){
+  .caption span.border {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    letter-spacing: 0.1em;
+  }
+  .box1, .box2 {
+    padding: 25px 20px;
+    margin: 30px 15px;
+  }
+}
