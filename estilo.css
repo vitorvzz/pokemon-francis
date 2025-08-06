@@ -23,13 +23,13 @@ html, body {
 
 /* Imagens de fundo */
 .parallax1 {
-  background-image: url("../imgs/varios pokemons.jpg");
+  background-image: url("./varios pokemons.jpg");
 }
 .parallax2 {
-  background-image: url("../imgs/pokemon img fundo.webp");
+  background-image: url("./pokemon img fundo.webp");
 }
 .parallax3 {
-  background-image: url("../imgs/4 pokemon.jfif");
+  background-image: url("./4 pokemon.jfif");
 }
 
 /* Caixa do texto central */
@@ -114,3 +114,4 @@ html, body {
     margin: 30px 15px;
   }
 }
+
